@@ -1,7 +1,12 @@
-import type { NextConfig } from 'next';
+// Import the NextConfig type from 'next'
+import { NextConfig } from 'next';
 
+// Define the configuration object with type annotation
 const nextConfig: NextConfig = {
-  /* config options here */
+  experimental: {
+    ppr: 'incremental',
+  },
 };
 
+// Export the configuration object as the default export
 export default nextConfig;
